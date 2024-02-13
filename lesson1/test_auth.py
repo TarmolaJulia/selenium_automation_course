@@ -18,7 +18,7 @@ def test_login_form():
     login_button = driver.find_element(By.XPATH, '//input[@data-test="login-button"]')
     login_button.click()
 
-    time.sleep(4)
+    time.sleep(3)
     assert driver.current_url == "https://www.saucedemo.com/inventory.html"
 
     driver.quit()
