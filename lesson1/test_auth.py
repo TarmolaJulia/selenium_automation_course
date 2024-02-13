@@ -18,7 +18,7 @@ def test_login_form():
     login_button = driver.find_element(By.XPATH, '//input[@data-test="login-button"]')
     login_button.click()
 
-    time.sleep(5)
+    time.sleep(4)
     assert driver.current_url == "https://www.saucedemo.com/inventory.html"
 
     driver.quit()
@@ -35,7 +35,7 @@ def test_login_form_with_unvalid_data():
     login_button = driver.find_element(By.XPATH, '//input[@data-test="login-button"]')
     login_button.click()
 
-    time.sleep(5)
+    time.sleep(4)
     # assert driver.current_url == "https://www.saucedemo.com/inventory.html"
 
     driver.quit()
